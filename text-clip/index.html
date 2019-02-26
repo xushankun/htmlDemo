@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css文字镂空图片背景</title>
+    <style>
+        @-webkit-keyframes loop{
+            0%{background-position: -800px 0;}
+            100%{background-position: -0 0;}
+        }
+        .text2{
+            width: 800px;
+            font-size:40px;
+            font-weight:700;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image:url("images/bg1.jpg");
+            background-repeat: no-repeat;
+            /*-webkit-animation:loop 10s linear infinite;*/
+        }
+    </style>
+</head>
+<body>
+    学习于：<a href="https://www.apple.com/cn/iphone-xr/" target="_blank">苹果官网</a>
+    <p class="text2">iPhone XR 上的这款全新显示屏，是 iPhone 迄今最先进的 LCD 屏。创新的背光设计，让显示屏一直延伸到了机身边角。因此看上去，整个屏幕都被鲜活生动的色彩铺满。</p>
+</body>
+</html>
